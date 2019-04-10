@@ -1,4 +1,4 @@
-## 지자체 협약 지원 API
+# 지자체 협약 지원 API
 
 중소기업은행 지자체 협약 지원 정보 데이터를 활용한 API 개발. 데이터 저장, 조회 기능을 구현하였고, 데이터는 ',' 구분자로 저장되어 있는 CSV파일을 사용하였습니다.
 
@@ -7,7 +7,7 @@
 
 
 
-# 개발환경
+## 개발환경
 
 Tool : Spring Tool Suite 4, postman
 
@@ -25,7 +25,7 @@ Server : sts embedded tomcat
 
 
 
-# 기능
+## 기능
 
 - csv파일을 이용한 데이터 저장.
 - 지자체 목록 검색.
@@ -38,11 +38,11 @@ Server : sts embedded tomcat
 
 
 
-# 테스트
+## 테스트
 
 **Spring Boot App 실행** 후 브라우저의 url과 postman을 이용한 테스트.
 
-1. csv파일을 이용한 데이터 저장.
+###1. csv파일을 이용한 데이터 저장.
 
 ```
 InputStreamReader is = new InputStreamReader(new FileInputStream("data/test.csv"), "EUC-KR");
@@ -57,7 +57,7 @@ input, output이 없는 기능으로 h2 console에서 데이터 저장 확인.
 
 
 
-2. 지자체 목록 검색.
+###2. 지자체 목록 검색.
 
 ```
 @RequestMapping(value = "/list")
@@ -85,7 +85,7 @@ URL : http://localhost:8080/conventions/list
 
 
 
-3. 지자체명을 입력받아 해당 지원정보 출력.
+###3. 지자체명을 입력받아 해당 지원정보 출력.
 
 ```
 @RequestMapping(value = "/find", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
