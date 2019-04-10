@@ -73,7 +73,7 @@ URL : http://localhost:8080/conventions/list
 
 출력 데이터 형식이 json이고, 저장된 전체 데이터가 조회되는지 확인.
 
-**출력 데이터**
+**출력 데이터 (브라우저)**
 ```
 [{"regionCd":"1","target":"강릉시 소재 중소기업으로서 강릉시장이 추천한 자","usage":"운전","limit":"추천금액 이내","rate":"3%","institute":"강릉시","mgmt":"강릉지점","reception":"강릉시 소재 영업점","regionNm":"강릉시"},{"regionCd":"2","target":"강원도 소재 중소기업으로서 강원도지사가 추천한 자","usage":"운전","limit":"8억원 이내","rate":"3%~5%","institute":"강원도","mgmt":"춘천지점","reception":"강원도 소재 영업점","regionNm":"강원도"},
 
@@ -102,14 +102,14 @@ postman으로 테스트.
 입력, 출력 데이터 형식이 json이고, 조건에 맞는 데이터가 조회되는지 확인.
 
 
-**입력 데이터**
+**입력 데이터 (postman)**
 ```
 {
 	"regionNm":"파주시"
 }
 ```
 
-**출력 데이터**
+**출력 데이터 (postman)**
 ```
 {
     "regionCd": "82",
