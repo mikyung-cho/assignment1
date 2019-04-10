@@ -42,7 +42,7 @@ Server : sts embedded tomcat
 
 **Spring Boot App 실행** 후 브라우저의 url과 postman을 이용한 테스트.
 
-###1. csv파일을 이용한 데이터 저장.
+1. csv파일을 이용한 데이터 저장.
 
 ```
 InputStreamReader is = new InputStreamReader(new FileInputStream("data/test.csv"), "EUC-KR");
@@ -57,7 +57,7 @@ input, output이 없는 기능으로 h2 console에서 데이터 저장 확인.
 
 
 
-###2. 지자체 목록 검색.
+2. 지자체 목록 검색.
 
 ```
 @RequestMapping(value = "/list")
@@ -85,7 +85,7 @@ URL : http://localhost:8080/conventions/list
 
 
 
-###3. 지자체명을 입력받아 해당 지원정보 출력.
+3. 지자체명을 입력받아 해당 지원정보 출력.
 
 ```
 @RequestMapping(value = "/find", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
