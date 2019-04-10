@@ -6,10 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
-import javax.servlet.http.HttpServletRequest;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,25 +25,6 @@ import com.preproject.assignment1.repository.ConventionRepository;
 public class Controller {
 	@Autowired
 	private ConventionRepository conventionRepository;
-
-	/*
-	 * private static final Logger logger =
-	 * LoggerFactory.getLogger(Controller.class);
-	 * 
-	 * @RequestMapping(value = "/httptest", produces =
-	 * MediaType.APPLICATION_JSON_VALUE) public Map<String, String> getHome() {
-	 * logger.info("request received");
-	 * 
-	 * Map<String, String> response = new HashMap<String, String>();
-	 * 
-	 * try { Region region = new Region((long) 1, "01", "강원도");
-	 * regionRepository.save(region); response.put("status", "success"); } catch
-	 * (Exception e) {
-	 * logger.error("Error occurred while trying to process api request", e);
-	 * response.put("status", "fail"); }
-	 * 
-	 * return response; }
-	 */
 
 	@RequestMapping("/csvreader")
 	public void readCsv() {
