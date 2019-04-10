@@ -73,6 +73,16 @@ URL : http://localhost:8080/conventions/list
 
 출력 데이터 형식이 json이고, 저장된 전체 데이터가 조회되는지 확인.
 
+**출력 데이터**
+```
+[{"regionCd":"1","target":"강릉시 소재 중소기업으로서 강릉시장이 추천한 자","usage":"운전","limit":"추천금액 이내","rate":"3%","institute":"강릉시","mgmt":"강릉지점","reception":"강릉시 소재 영업점","regionNm":"강릉시"},{"regionCd":"2","target":"강원도 소재 중소기업으로서 강원도지사가 추천한 자","usage":"운전","limit":"8억원 이내","rate":"3%~5%","institute":"강원도","mgmt":"춘천지점","reception":"강원도 소재 영업점","regionNm":"강원도"},
+
+...
+
+{"regionCd":"98","target":"안양상공회의소에서 추천하는 자","usage":"운전","limit":"1억원 이내","rate":"1.00%","institute":"안양상공회의소","mgmt":"여신기획부","reception":"전영업점","regionNm":"안양상공회의소"}]
+```
+
+
 
 
 3. 지자체명을 입력받아 해당 지원정보 출력.
