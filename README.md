@@ -7,7 +7,7 @@
 
 
 
-# 개발환경
+**개발환경**
 
 Tool : Spring Tool Suite 4, postman
 Framework : Spring Framework, hibernate, Spring Data JPA
@@ -20,7 +20,7 @@ Server : sts embedded tomcat
 
 
 
-# 기능
+**기능**
 
 - csv파일을 이용한 데이터 저장.
 - 저장된 목록 검색.
