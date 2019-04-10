@@ -9,11 +9,11 @@
   
 **개발환경**
 
->Tool : Spring Tool Suite 4, postman
->Framework : Spring Framework, hibernate, Spring Data JPA
->Library : opencsv
->Database : h2
->Server : sts embedded tomcat
+Tool : Spring Tool Suite 4, postman /
+Framework : Spring Framework, hibernate, Spring Data JPA /
+Library : opencsv /
+Database : h2 /
+Server : sts embedded tomcat
 
   
 
